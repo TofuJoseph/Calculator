@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(204, 197, 197);
+    display: grid;
+    place-items: center;
+}
+
+.calc_container{
+    box-shadow: 0px 29px 52px 0px rgba(0, 0, 0, 0.4),
+        0px 25px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    background-color: rgb(15, 15, 15);
+    margin-top: 100px;
+}
+
+#display{
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    padding: 20px;
+    border: none;
+    font-weight: 700px;
+    border-radius: 10px 10px 0 0;
+}
+
+button{
+    transition: 0.3s;
+    border: none;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    font-size: 23px;
+    box-shadow: 5px 5px 5px rgb(24, 24, 24);
+    border-radius: 8px;
+    border: 1px rgba(211, 211, 211, 0.11) solid;
+}
+
+button :hover{
+    transition: 0.3s;
+}
+
+.btns{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row-buttons * {
+    width: 80px;
+    height: 60px;
+}       
+
+.row-buttons :hover{
+    background-color: grey;
+    transition: 0.2s;
+}
+
+.row-buttons *:last-child {
+    background-color: rgb(27, 27, 27);
+}
+
+.functions * {
+    width: 175px;
+    height: 60px;
+}
+
+.functions #clear-button{
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+.functions #clear-button:hover{
+    background-color: rgb(228, 105, 48);
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+.functions #result-button{
+    background-color: greenyellow;
+    color: black;
+}
+
+::placeholder{
+    color: rgba(63, 62, 62, 0.205);
+    font-size: 25px;
+    text-align: center;
+}

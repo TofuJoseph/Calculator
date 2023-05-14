@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>Calculator</title>
+
+
+
+</head>
+
+<body>
+    <div class="calc_container">
+        <input type="text" id="display" placeholder="Tofunun Calculatoru" readonly>
+        <div class="btns">
+            <div class="row-1 row-buttons">
+                <button onclick="toDisplay('7')">7</button>
+                <button onclick="toDisplay('8')">8</button>
+                <button onclick="toDisplay('9')">9</button>
+                <button onclick="toDisplay('+')">+</button>
+            </div>
+
+            <div class="row-2 row-buttons">
+                <button onclick="toDisplay('4')">4</button>
+                <button onclick="toDisplay('5')">5</button>
+                <button onclick="toDisplay('6')">6</button>
+                <button onclick="toDisplay('-')">-</button>
+            </div>
+
+            <div class="row-3 row-buttons">
+                <button onclick="toDisplay('1')">1</button>
+                <button onclick="toDisplay('2')">2</button>
+                <button onclick="toDisplay('3')">3</button>
+                <button onclick="toDisplay('*')">*</button>
+            </div>
+
+            <div class="row-4 row-buttons">
+                <button onclick="toDisplay('0')">0</button>
+                <button onclick="toDisplay('.')">.</button>
+                <button onclick="toDisplay(',')">,</button>
+                <button onclick="toDisplay('/')">/</button>
+            </div>
+
+            <div class="functions">
+                <button id="clear-button" onclick="clearDisplay()">Clear</button>
+                <button id="result-button" onclick="calculate()">=</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
